@@ -17,22 +17,22 @@ export default function () {
         {/* top buttons */}
 
         <div className="py-8 px-6 flex">
-            <Link href="/order/1" className="p-4 bg-[#EDEDED] rounded-xl ">
+            <Link href="/order/1" className="p-4 bg-[#EDEDED] dark:bg-black/40 rounded-xl ">
                 <ChevronLeft size={32} />
             </Link>
 
-             <div className="p-4  ms-auto bg-[#EDEDED] rounded-xl ">
+             <div className="p-4  ms-auto bg-black/40 bg-[#EDEDED] rounded-xl ">
                 <LocateFixed size={32} />
             </div>
            
         </div>
 
       {/* pickup details */}
-      <Container className="fixed bottom-0 bg-white py-6">
-        <div className="border-4 border-gray-200 w-16 rounded-full mx-auto"></div>
+      <Container className="fixed bottom-0 bg-white dark:bg-gray-900 py-6">
+        <div className="border-4 border-gray-200 dark:border-white/40 w-16 rounded-full mx-auto"></div>
         <div className="py-4 text-center">
-          <h1>10 minutes left</h1>
-          <p>Delivery to JI. Kpg Sutoyo</p>
+          <h1 className="font-semibold">10 minutes left</h1>
+          <p><span className="text-gray-400">Delivery to</span> JI.Kpg Sutoyo</p>
         </div>
         <div className="space-y-2">
           <div className="grid grid-cols-4 gap-4">
@@ -41,8 +41,8 @@ export default function () {
             <div className="border-3 rounded-full border-green-500"></div>
             <div className="border-3 rounded-full border-gray-200"></div>
           </div>
-          <div className="flex items-center gap-4 p-2 border-2 rounded-lg border-gray-200">
-            <div className="p-4 border-2 border-gray-200 rounded-xl"><Motorbike size={35} color="#C67C4E" className="" /></div>
+          <div className="flex items-center gap-4 p-2 border-2 rounded-lg border-gray-200 dark:border-white/10">
+            <div className="p-4 border-2 border-gray-200 dark:border-white/10 rounded-xl"><Motorbike size={35} color="#C67C4E" className="" /></div>
             <div>
               <h4 className="font-semibold">Delivered your order</h4>
               <p className="font-thin text-sm">
@@ -60,7 +60,7 @@ export default function () {
             </div>
             {/* name */}
             <div>
-                <h4 className="text-black font-semibold text-lg">
+                <h4 className=" font-semibold text-lg">
                     Brooklyn Simmons
                 </h4>
                 <span className="text-gray-400">
@@ -69,8 +69,8 @@ export default function () {
             </div>
 
             {/* phone call */}
-            <div className="ms-auto p-4 border-2 border-gray-200 rounded-xl">
-                <PhoneCall size={30} color="#2A2A2A" />
+            <div className="ms-auto p-4 border-2 border-gray-200 dark:border-white/10 rounded-xl">
+                <PhoneCall size={30}  className="dark:text-white" />
             </div>
           </div>
         </div>

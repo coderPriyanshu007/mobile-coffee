@@ -15,18 +15,18 @@ export default function () {
           <div className="flex items-center text-sm gap-1 text-gray-200 font-semibold">
             Bilzen, Tanjungbalai <ChevronDown size={20} />
           </div>
-          <div className="flex gap-4 mt-6  ">
-            <div className="flex flex-1 bg-[#313131]  p-4 rounded-xl ">
+          <div className="flex flex-wrap gap-4 mt-6  ">
+            <div className="flex flex-1  bg-[#313131]  p-4 rounded-xl ">
               <Search color="white" size={25} />
-              <form action="">
+              <form action="" className="">
                 <input
                   type="search"
-                  placeholder="Search coffee"
-                  className="text-white ms-2 text-sm"
+                   placeholder="Search coffee"
+                  className="text-white   ms-2 text-sm"
                 />
               </form>
             </div>
-            <button className="bg-[#C67C4E] px-4   rounded-xl">
+            <button className="bg-[#C67C4E] p-4   rounded-xl">
               <SlidersHorizontal color="white" className="" />
             </button>
           </div>
@@ -57,11 +57,11 @@ export default function () {
           </div>
           <div className="flex overflow-x-auto text-sm text-white font-semibold no-scrollbar whitespace-nowrap gap-4">
             <div className="bg-[#C67C4E] px-2 py-1.5 rounded-lg">All Coffee</div>
-            <div className="px-2 py-1.5 rounded-lg text-black">Machiato</div>
-            <div className="px-2 py-1.5 rounded-lg text-black">Latte</div>
-            <div className="px-2 py-1.5 rounded-lg text-black">Americano</div>
-            <div className="px-2 py-1.5 rounded-lg text-black">Espresso</div>
-            <div className="px-2 py-1.5 rounded-lg text-black">Flat</div>
+            <div className="px-2 py-1.5 rounded-lg text-black dark:text-white">Machiato</div>
+            <div className="px-2 py-1.5 rounded-lg text-black dark:text-white">Latte</div>
+            <div className="px-2 py-1.5 rounded-lg text-black dark:text-white">Americano</div>
+            <div className="px-2 py-1.5 rounded-lg text-black dark:text-white">Espresso</div>
+            <div className="px-2 py-1.5 rounded-lg text-black dark:text-white">Flat</div>
           </div>
           <div className="grid grid-cols-2 px-2 md:grid-cols-3 gap-8">
             {

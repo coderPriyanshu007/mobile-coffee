@@ -22,11 +22,11 @@ export default function () {
       <main className="space-y-4">
         {/* deliver */}
         <Container>
-          <div className="grid grid-cols-2   text-white p-1 bg-gray-200 rounded-lg">
-            <button className="bg-[#C67C4E] font-semibold py-1.5 rounded-lg">
-              Deliver
+          <div className="grid grid-cols-2   text-white p-1 dark:bg-white/10 max-w-md mx-auto bg-gray-200 rounded-lg">
+            <button className="bg-[#C67C4E] font-semibold py-2 rounded-lg">
+              Delivery
             </button>
-            <button className="text-black py-1.5 rounded-lg">Pick Up</button>
+            <button className="text-black py-2 dark:text-white rounded-lg">Pick Up</button>
           </div>
         </Container>
 
@@ -41,16 +41,16 @@ export default function () {
                 </h3>
                 <small className="text-gray-400">Kpg.Sutoyo No. 620, Blizen, Tanjungbalai</small>
             </div>
-            <div className="flex gap-2 mt-4">
-                <div className="flex border items-center px-4 py-1.5 rounded-full border-[gray] text-gray-600 text-xs gap-2">
+            <div className="flex gap-2  mt-4">
+                <div className="flex border items-center dark:text-gray-200 px-4 py-1.5 rounded-full border-[gray] text-gray-600 text-xs gap-2">
                     <SquarePen size={16} className="" /> <span>Edit Address</span>
                 </div>
-                <div className="flex border items-center px-2 py-1 rounded-full border-[gray] text-gray-600 text-xs gap-2">
+                <div className="flex border items-center dark:text-gray-200 px-2 py-1 rounded-full border-[gray] text-gray-600 text-xs gap-2">
                     <NotepadText size={16} className="" /> <span>Add Note</span>
                 </div>
             </div>
         </Container>
-        <div className="border mx-12 border-gray-200">
+        <div className="border mx-12 border-gray-200 dark:border-white/20">
 
         </div>
         <Container>
@@ -63,23 +63,23 @@ export default function () {
                     <small className="text-[gray] text-xs">Deep Foam</small>
                 </div>
                 <div className="flex ms-auto  gap-4 items-center">
-                    <span className="text-lg/0 px-2 py-3 bg-white  rounded-full border  border-gray-200 ms ">-</span>
+                    <span className="text-lg/0 px-2 py-3 bg-white dark:bg-white/10  rounded-full border  border-gray-200 dark:border-gray-400 ms ">-</span>
                     <span className="text-sm font-semibold">1</span>
-                    <span className="text-lg/0 px-2 py-3 bg-white rounded-full border border-gray-200">+</span>
+                    <span className="text-lg/0 px-2 py-3 bg-white dark:bg-white/10 rounded-full border border-gray-200 dark:border-gray-400">+</span>
                 </div>
             </div>
         </Container>
-        <div className="border-2 border-[#F9F2ED]"></div>
+        <div className="border-2 border-[#F9F2ED] dark:border-white/10"></div>
         {/* payment summary */}
         <Container>
-            <div className="flex gap-4 p-4 items-center border-1 rounded-xl border-gray-200 ">
+            <div className="flex gap-4 p-4 items-center border-1 rounded-xl border-gray-200 dark:border-white/10 ">
                 <BadgePercent color="#C67C4E" />
-                <span className="font-semibold text-sm text-gray-700">
+                <span className="font-semibold text-sm dark:text-gray-200 text-gray-700">
                     1 Discount is Applies
                 </span>
                 <ChevronRight className="ms-auto text-gray-700" />
             </div>
-            <h2 className="font-semibold text-base/16">Payment Summary</h2>
+            <h2 className="font-semibold  text-base/16">Payment Summary</h2>
             <div className="flex mb-2">
                 <span className="text-sm">Price</span>
                 <span className="ms-auto font-semibold text-sm">$ 4.53</span>
@@ -91,7 +91,7 @@ export default function () {
         </Container>
         
       </main>
-      <footer className="fixed bottom-0 py-2  z-20 bg-white w-full">
+      <footer className="fixed bottom-0 py-2  z-20 dark:bg-black bg-white w-full">
            <div className="px-6 space-y-2">
              <div className="flex gap-4 items-center">
                 <LucideWallet size={20} color="#C67C4E" />

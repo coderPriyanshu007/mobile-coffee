@@ -18,7 +18,7 @@ export default function () {
           </div>
         </div>
     </header>
-    <main className="space-y-4 min-h-screen">
+    <main className="space-y-4 min-h-screen pb-20">
         
 
         {/* product details container*/}

@@ -19,7 +19,7 @@ export default function () {
         </nav>
       </header>
 
-      <main className="space-y-4 min-h-screen">
+      <main className="space-y-4">
         {/* deliver */}
         <Container>
           <div className="grid grid-cols-2   text-white p-1 bg-gray-200 rounded-lg">
@@ -89,7 +89,9 @@ export default function () {
                 <span className="ms-auto  text-sm"> <span className="line-through me-2">$ 2.0</span><span className="font-semibold">$ 1.0</span></span>
             </div>
         </Container>
-        <footer className="fixed bottom-0 py-2  z-20 bg-white w-full">
+        
+      </main>
+      <footer className="fixed bottom-0 py-2  z-20 bg-white w-full">
            <div className="px-6 space-y-2">
              <div className="flex gap-4 items-center">
                 <LucideWallet size={20} color="#C67C4E" />
@@ -109,7 +111,6 @@ export default function () {
            </div>
            
         </footer>
-      </main>
     </>
   );
 }

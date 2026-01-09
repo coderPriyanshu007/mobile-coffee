@@ -5,8 +5,8 @@ import Container from "../components/Container";
 import ProductCard from "../components/ProductCard";
 import Navigationi from "../components/Navigationi";
 export default function () {
-  return (
-    <main className="flex flex-col flex-1 min-h-screen">
+  return (<>
+    <main className="flex flex-col flex-1 min-h-screen pb-20">
       <Container className="bg-gradient-to-r pb-30 py-8  from-[#313131] from-50% to-black ">
         <div className="relative">
           {/* location profile */}
@@ -72,7 +72,9 @@ export default function () {
           </div>
         </div>
       </section>
-      <Navigationi />
+      
     </main>
+    <Navigationi />
+    </>
   );
 }
